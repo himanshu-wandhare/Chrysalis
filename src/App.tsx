@@ -66,15 +66,7 @@ const App: React.FC = () => {
                 />
 
                 {/* Timeline route */}
-                <Route
-                    path="/timeline"
-                    element={
-                        <Layout>
-                            <Timeline />
-                        </Layout>
-                    }
-                />
-                {/* Timeline route */}
+
                 <Route
                     path="/winners"
                     element={
