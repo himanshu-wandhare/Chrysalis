@@ -47,54 +47,54 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 const App: React.FC = () => {
     return (
-        <Router>
-            {/* Define Routes */}
-            <Routes>
-                {/* Home route (renders both HeroSection and Timeline) */}
-                <Route
-                    path="/"
-                    element={
-                        <ReduxProvider>
+        <ReduxProvider>
+            <Router>
+                {/* Define Routes */}
+                <Routes>
+                    {/* Home route (renders both HeroSection and Timeline) */}
+                    <Route
+                        path="/"
+                        element={
                             <Layout>
                                 <HeroSection />
                                 <InvitationCard />
                                 <Timeline />
                                 {/* Add Timeline here on the home page */}
                             </Layout>
-                        </ReduxProvider>
-                    }
-                />
+                        }
+                    />
 
-                {/* Timeline route */}
+                    {/* Timeline route */}
 
-                <Route
-                    path="/winners"
-                    element={
-                        <Layout>
-                            <Winners />
-                        </Layout>
-                    }
-                />
-                {/* Events route */}
-                <Route
-                    path="/gallery"
-                    element={
-                        <Layout>
-                            <EventsPage />
-                        </Layout>
-                    }
-                />
-                {/* Members route */}
-                <Route
-                    path="/members"
-                    element={
-                        <Layout>
-                            <Members />
-                        </Layout>
-                    }
-                />
-            </Routes>
-        </Router>
+                    <Route
+                        path="/winners"
+                        element={
+                            <Layout>
+                                <Winners />
+                            </Layout>
+                        }
+                    />
+                    {/* Events route */}
+                    <Route
+                        path="/gallery"
+                        element={
+                            <Layout>
+                                <EventsPage />
+                            </Layout>
+                        }
+                    />
+                    {/* Members route */}
+                    <Route
+                        path="/members"
+                        element={
+                            <Layout>
+                                <Members />
+                            </Layout>
+                        }
+                    />
+                </Routes>
+            </Router>
+        </ReduxProvider>
     );
 };
 
