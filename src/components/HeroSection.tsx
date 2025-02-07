@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleExploreEvents = () => {
-        navigate("/events"); // Redirect to /events
+        navigate("/gallery"); // Redirect to /gallery
     };
 
     return (
