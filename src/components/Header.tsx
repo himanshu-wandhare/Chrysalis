@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useLocation } from 'react-router-dom';
-import { GrInstagram } from 'react-icons/gr'; // Import GrInstagram icon
+import { useLocation } from "react-router-dom";
+import { GrInstagram } from "react-icons/gr"; // Import GrInstagram icon
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,21 +31,30 @@ const Header: React.FC = () => {
 
                     {/* Desktop menu */}
                     <div className="hidden md:flex space-x-8">
-                        <a
+                        <Link
                             key="home"
-                            href="/"
-                            className={`text-white transition-colors duration-300 ${location.pathname === '/' ? 'border-b-2 border-blue-500 font-bold' : ''}`}
+                            to="/"
+                            className={`text-white transition-colors duration-300 ${
+                                location.pathname === "/"
+                                    ? "border-b-2 border-blue-500 font-bold"
+                                    : ""
+                            }`}
                         >
                             Home
-                        </a>
+                        </Link>
                         {["Gallery", "Members", "Winners"].map((item) => (
-                            <a
+                            <Link
                                 key={item}
-                                href={`/${item.toLowerCase()}`}
-                                className={`text-white transition-colors duration-300 ${location.pathname === `/${item.toLowerCase()}` ? 'border-b-2 border-blue-500 font-bold' : ''}`}
+                                to={`/${item.toLowerCase()}`}
+                                className={`text-white transition-colors duration-300 ${
+                                    location.pathname ===
+                                    `/${item.toLowerCase()}`
+                                        ? "border-b-2 border-blue-500 font-bold"
+                                        : ""
+                                }`}
                             >
                                 {item}
-                            </a>
+                            </Link>
                         ))}
 
                         {/* Instagram Logo with Hover Effect */}
@@ -74,23 +84,32 @@ const Header: React.FC = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-black/95 backdrop-blur-lg border-b-2 border-gray-700/75">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        <a
+                        <Link
                             key="home"
-                            href="/"
-                            className={`block px-3 py-2 text-white transition-colors duration-300 ${location.pathname === '/' ? 'border-b-2 border-blue-500 font-bold' : ''}`}
+                            to="/"
+                            className={`block px-3 py-2 text-white transition-colors duration-300 ${
+                                location.pathname === "/"
+                                    ? "border-b-2 border-blue-500 font-bold"
+                                    : ""
+                            }`}
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Home
-                        </a>
+                        </Link>
                         {["Gallery", "Members", "Winners"].map((item) => (
-                            <a
+                            <Link
                                 key={item}
-                                href={`/${item.toLowerCase()}`}
-                                className={`block px-3 py-2 text-white transition-colors duration-300 ${location.pathname === `/${item.toLowerCase()}` ? 'border-b-2 border-blue-500 font-bold' : ''}`}
+                                to={`/${item.toLowerCase()}`}
+                                className={`block px-3 py-2 text-white transition-colors duration-300 ${
+                                    location.pathname ===
+                                    `/${item.toLowerCase()}`
+                                        ? "border-b-2 border-blue-500 font-bold"
+                                        : ""
+                                }`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item}
-                            </a>
+                            </Link>
                         ))}
 
                         {/* Instagram Logo with Hover Effect */}
