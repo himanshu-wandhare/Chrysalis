@@ -6,7 +6,7 @@ export default function Event3D({
     logos: { name: string; img: string }[];
 }) {
     return (
-        <div className="relative h-[600px] flex w-4/5 mx-auto mb-32 flex-col items-center justify-center gap-4 overflow-hidden px-20 md:shadow-xl">
+        <div className="relative h-[600px] flex w-4/5 mx-auto flex-col items-center justify-center gap-4 overflow-hidden px-20 md:shadow-xl">
             <div className="flex flex-row gap-4 [perspective:300px]">
                 <Marquee
                     className="h-full w-[200px] justify-center overflow-hidden [--duration:60s] [--gap:1rem] md:w-3/4"
