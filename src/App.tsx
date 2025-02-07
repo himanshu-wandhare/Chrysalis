@@ -9,13 +9,14 @@ import {
 // Importing Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
-import Timeline from "./components/Timeline"; // Assuming Timeline is a component
+// import HeroSection from "./components/HeroSection";
+// import Timeline from "./components/Timeline"; // Assuming Timeline is a component
 import EventsPage from "./pages/EventsPage";
-import InvitationCard from "./components/InvitationCard";
+// import InvitationCard from "./components/InvitationCard";
 import { ReduxProvider } from "./hooks/isPhone";
 import Members from "./pages/Members";
 import Winners from "./pages/Winners";
+import HomePage from "./pages/HomePage";
 
 const getBackground = (pathname: string) => {
     return pathname === "/"
@@ -32,13 +33,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             )} bg-cover`}
         >
             {/* Header that is always visible */}
-            <Header />
+            {/* <Header /> */}
 
             {/* Main Content that changes based on the route */}
-            <main className="backdrop-blur">
-                {children}
-                <Footer />
-            </main>
+            {/* <main className="backdrop-blur"> */}
+            {children}
+            {/* <Footer /> */}
+            {/* </main> */}
 
             {/* Footer that is always visible */}
         </div>
@@ -46,53 +47,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 };
 
 const App: React.FC = () => {
+    // const location = useLocation();
     return (
         <ReduxProvider>
             <Router>
+                <Layout>
+                    <Header />
+                    <main className="backdrop-blur">
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/winners" element={<Winners />} />
+                            <Route path="/gallery" element={<EventsPage />} />
+                            <Route path="/members" element={<Members />} />
+                        </Routes>
+                        <Footer />
+                    </main>
+                </Layout>
                 {/* Define Routes */}
-                <Routes>
-                    {/* Home route (renders both HeroSection and Timeline) */}
-                    <Route
-                        path="/"
-                        element={
-                            <Layout>
-                                <HeroSection />
-                                <InvitationCard />
-                                <Timeline />
-                                {/* Add Timeline here on the home page */}
-                            </Layout>
-                        }
-                    />
-
-                    {/* Timeline route */}
-
-                    <Route
-                        path="/winners"
-                        element={
-                            <Layout>
-                                <Winners />
-                            </Layout>
-                        }
-                    />
-                    {/* Events route */}
-                    <Route
-                        path="/gallery"
-                        element={
-                            <Layout>
-                                <EventsPage />
-                            </Layout>
-                        }
-                    />
-                    {/* Members route */}
-                    <Route
-                        path="/members"
-                        element={
-                            <Layout>
-                                <Members />
-                            </Layout>
-                        }
-                    />
-                </Routes>
             </Router>
         </ReduxProvider>
     );
