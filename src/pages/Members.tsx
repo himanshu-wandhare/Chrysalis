@@ -218,13 +218,6 @@ const members = [
   },
 
   {
-    name: "Tanisha Dalal",
-    designation: "Commitee Member",
-    imageUrl:
-      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738943581/IMG_20241205_120326_-_Tanisha_Dalal-removebg-preview_k5jv5h.png",
-  },
-
-  {
     name: "Akshita Bhange",
     designation: "Commitee Member",
     imageUrl:
@@ -341,7 +334,7 @@ const members = [
   },
   {
     name: "Abhishek mathnere",
-    designation: "Refreshment Head",
+    designation: "Treasurer",
     imageUrl:
       "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738947045/WhatsApp_Image_2025-02-07_at_10.06.00_PM-removebg-preview_pz8yvm.png",
   },
