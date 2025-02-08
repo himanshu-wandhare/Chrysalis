@@ -3,7 +3,7 @@ import Event3D from "@/components/Event3D";
 
 const events = [
     {
-        title: "INAUGRAL",
+        title: "INAUGURAL",
         images: [
             "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738727733/Chrysalis/btkogbq5nffmctapkoc6.jpg",
             "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738729178/Chrysalis_2024_grp_photo_uhzkl7.jpg",
