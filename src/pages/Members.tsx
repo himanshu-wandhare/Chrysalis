@@ -214,7 +214,7 @@ const members = [
     name: "Ayan Sheikh",
     designation: "CR",
     imageUrl:
-      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738919404/IMG-20241205-WA0024_1__-_Ayan-removebg-preview_uwvks3.png",
+      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738987435/SRC%20COMMITTEE/ayanphoto/ktrlwxuimb2gmnieepxt.jpg",
   },
 
   {
