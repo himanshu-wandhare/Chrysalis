@@ -259,13 +259,6 @@ const members = [
   },
 
   {
-    name: "Aashika Jain",
-    designation: "Commitee Member",
-    imageUrl:
-      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738943582/IMG-20250206-WA0009_-_Aashika_Jain-removebg-preview_qyvocb.png",
-  },
-
-  {
     name: "Gargi Bisen",
     designation: "Commitee Member",
     imageUrl:
