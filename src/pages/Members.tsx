@@ -6,6 +6,12 @@ import "aos/dist/aos.css"; // Import AOS styles
 // Sample data for the team members
 const members = [
     {
+    name: "Himanshu Bankar",
+    designation: "Techanical Head",
+    imageUrl:
+      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738862171/techanical_head_wdxbey.png",
+  },
+    {
     name: "Varad Uprade",
     designation: "Secretary MCA",
     imageUrl:
@@ -35,12 +41,6 @@ const members = [
     designation: "Inaugral Head",
     imageUrl:
       "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738862146/Riya_Saxena_Inaugral_Head_osvaed.png",
-  },
-  {
-    name: "Himanshu Bankar",
-    designation: "Techanical Head",
-    imageUrl:
-      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738862171/techanical_head_wdxbey.png",
   },
   {
     name: "Omkar  Barhanpure",
@@ -200,7 +200,7 @@ const members = [
     name: "Ishita Shrivastava",
     designation: "LR",
     imageUrl:
-      "hhttps://res.cloudinary.com/dcpugzrqm/image/upload/v1738919677/formal_photo1_-_Ishita_Shrivastava-removebg-preview.png",
+      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738919677/formal_photo1_-_Ishita_Shrivastava-removebg-preview.png",
   },
 
   {
