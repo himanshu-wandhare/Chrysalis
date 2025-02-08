@@ -134,6 +134,13 @@ const members = [
   },
 
   {
+    name: "Saksham Lanjewar",
+    designation: "CDPC Member",
+    imageUrl:
+      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738936026/IMG_20250206_211809818_HDR-removebg-preview_fo02b5.png",
+  },
+
+  {
     name: "Lucky Meena",
     designation: "CDPC",
     imageUrl:
@@ -201,13 +208,6 @@ const members = [
     designation: "LR",
     imageUrl:
       "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738919677/formal_photo1_-_Ishita_Shrivastava-removebg-preview.png",
-  },
-
-  {
-    name: "Saksham Lanjewar",
-    designation: "CDPC Member",
-    imageUrl:
-      "https://res.cloudinary.com/dcpugzrqm/image/upload/v1738936026/IMG_20250206_211809818_HDR-removebg-preview_fo02b5.png",
   },
 
   {
